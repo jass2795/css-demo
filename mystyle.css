@@ -11,7 +11,7 @@
     float:right;
 }
 
-.n2
+.n2   /* header   will stick to top while scrolling */
 {
   
 
@@ -26,12 +26,12 @@ top: 0;
 max-width: 1400px;
   }
   
-  .n2 li{
+  .n2 li{     
       display: inline;
      
       
   }
-  .n2 a{
+  .n2 a{       /* removing underline from links */
       list-style-type: none;
        padding:20px;
        margin:20px;
@@ -40,13 +40,15 @@ max-width: 1400px;
        
   }
 
-.d1{
+.d1
+{            /* use of flex properties */
  display:flex;
  flex-direction:row;
  justify-content: space-around;
  flex-wrap:wrap;
 }
-.d1 > div{
+.d1 > div
+{                    /* applying effect to all three flex parts */
   background-color: lightgreen;
   padding:30px;
   margin:20px;
@@ -56,7 +58,7 @@ max-width: 1400px;
 }
 .d11{
   border: 9px dotted blue;
-<!-- overflow: scroll; -->
+
 }
 .d111
 {
@@ -77,11 +79,12 @@ border:3px solid orange;
  
 }
 .d22
-{   border:9px dotted blue;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 40px;
-  line-height: 30px;
-  overflow: scroll;
+{   
+    border:9px dotted blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    line-height: 30px;
+    overflow: scroll;
 }
 .d222
 {
@@ -99,48 +102,44 @@ border:3px solid orange;
   overflow:scroll;
 
 }
-.d33 li{
+.d33 li{        /* changing into capital case */
  text-transform: uppercase;
 }
-.d333
+.d333          /*  applying shadow effects       */
 {
     border:9px solid blue;
     box-shadow: 8px 8px pink;
 }
-.d333 img{
+.d333 img
+{
     height: 80px;
     width: 80px;
 }
 .f1
-{  width:100%;
-    
+{  
+    width:100%;
     background-color: black;
- color:white;
- bottom:0;
- 
- 
-
- text-transform: uppercase;
+    color:white;
+    bottom:0;
+    text-transform: uppercase;
  
 }
-.f1 img{
-padding-left:20px;
+.f1 img
+{
+    padding-left:20px;
 }
-body{
+body 
+{
  background-color: azure
 }
 
-td{
+td
+{
     font-size: 32px;
     background:linear-gradient( to bottom right, cyan,yellow);
     font-family: 'Times New Roman', Times, serif;
 }
-<!--
-@media screen and (max-width:1200px)
-{
-    
 
-}
 
 @media screen and (max-width:670px)
 {
@@ -149,44 +148,51 @@ td{
     width: 40%;
     
 }
-.d22{
+.d22
+{
 width:40%;
 }
-.d33{
+.d33
+{
 width:40%;
 }
-.n2{
+.n2
+{
     display: block;
 }
-.f1{
+.f1
+{
     width:100%;
     
 }
 }
 @media screen and (max-width:570px)
 {
-.n2{
+.n2
+{
     display: block;
 }
 .d11
-{ margin:4px;
+{ 
+    margin:4px;
     width: 20%;
     padding:10px;
 }
-.d22{
-width:20%;
+.d22
+{
+    width:20%;
 }
-.d22:hover{
-    transform:rotate(200deg);
-}
-.d33{
-width:20%;
+
+.d33
+{
+    width:20%;
 }
 
 }
 @media screen and (max-width:370px)
 {  
-    .n2{
+    .n2
+    {
         display: block;
     }
     .d11
@@ -195,15 +201,17 @@ width:20%;
         padding:10px;
         color:red;
     }
-    .d22{
-    width:40%;
-    background-color: blueviolet;
-    color:red;
-}
-    .d33{
-    width:40%;
-background-color:black;
-color:red;    
+    .d22
+    {
+         width:40%;
+        background-color: blueviolet;
+        color:red;
+    }
+    .d33
+    {
+        width:40%;
+        background-color:black;
+        color:red;    
 
-}
+    }
 }
